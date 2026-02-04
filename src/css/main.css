@@ -88,7 +88,7 @@ section h1 {
 .My h1 {
     font-size: 80px;
     margin: 0;
-    background: linear-gradient(90deg, #1e90ff, #00bfff);
+    background: linear-gradient(90deg, #ff1ee1, #00bfff);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -98,7 +98,8 @@ section h1 {
 .My h4 {
     font-size: 28px;
     font-weight: 400;
-    color: #ff0000;
+    color: snow;
+    text-shadow: 2px 2px 5px #00bbff, -2px -2px 5px #FF1493;
     margin: 25px 0 40px 0;
 }
 
@@ -112,7 +113,8 @@ section h1 {
 .My .boxname h3 {
     font-size: 50px;
     font-weight: 400;
-    color: #ea00ff;
+    color: snow;
+    text-shadow: 2px 2px 5px #00bbff, -2px -2px 5px #FF1493;
     margin-bottom: 15px;
     margin-top: auto;
 }

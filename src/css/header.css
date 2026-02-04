@@ -166,7 +166,7 @@ header.active {
 }
 
 .MenuOptions li a:hover {
-    color: #ff0000;
+    color: #e37ede;
 }
 
 /* responsividade */
@@ -230,5 +230,10 @@ header.active {
 
     .MenuOptions li a {
         font-size: 4rem;
+    }
+
+    .Title::after {
+        animation: none;
+        width: 100%;
     }
 }

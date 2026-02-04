@@ -14,7 +14,7 @@
 body {
     overflow-x: hidden;
     min-height: 100vh;
-    background: linear-gradient(90deg, #7EC8E3 0%, #FF1493 100%);
+    background: linear-gradient(90deg, #7EC8E3 0%, #e37ede 100%);
 }
 
 :root {
