@@ -79,6 +79,7 @@ section h1 {
 }
 
 .My {
+    position: relative;
     flex: 1;
     width: 100%;
     text-align: left;
@@ -111,25 +112,62 @@ section h1 {
 }
 
 .heart {
-    display: inline-block;
-    animation: pulse-heart 1s infinite;
-    transform-origin: center;
+    position: absolute;
+    font-size: 18px;
+    top: 252px;
+    left: 350px;
+    animation: pulse-heart 1s infinite, colorsrgb 6s linear infinite;
 }
 
 @keyframes pulse-heart {
     0% {
         transform: scale(1);
-        text-shadow: 0 0 5px #00bbff, 0 0 10px #FF1493;
     }
 
-    50% {
+    20% {
+        transform: scale(1);
+    }
+
+    40% {
         transform: scale(1.3);
-        text-shadow: 0 0 15px #00bbff, 0 0 25px #FF1493;
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1);
     }
 
     100% {
         transform: scale(1);
-        text-shadow: 0 0 5px #00bbff, 0 0 10px #FF1493;
+    }
+}
+
+@keyframes colorsrgb {
+    0% {
+        text-shadow: 2px 2px 5px hsl(100, 100%, 70%), -2px -2px 5px hsl(100, 100%, 70%);
+    }
+
+    20% {
+        text-shadow: 2px 2px 5px hsl(40, 100%, 70%), -2px -2px 5px hsl(40, 100%, 70%);
+    }
+
+    40% {
+        text-shadow: 2px 2px 5px hsl(160, 100%, 70%), -2px -2px 5px hsl(160, 100%, 70%);
+    }
+
+    60% {
+        text-shadow: 2px 2px 5px hsl(220, 100%, 70%), -2px -2px 5px hsl(220, 100%, 70%);
+    }
+
+    80% {
+        text-shadow: 2px 2px 5px hsl(280, 100%, 70%), -2px -2px 5px hsl(280, 100%, 70%);
+    }
+
+    100% {
+        text-shadow: 2px 2px 5px hsl(340, 100%, 70%), -2px -2px 5px hsl(340, 100%, 70%);
     }
 }
 
@@ -145,18 +183,32 @@ section h1 {
 .My .boxname img {
     margin-left: 10px;
     width: 120px;
-    filter: drop-shadow(0 0 2px rgb(255, 255, 255)) drop-shadow(0 0 5px rgb(255, 255, 255));
-    animation: EffectStitch 6s ease-in-out infinite;
+    animation: EffectStitch 6s linear infinite;
 }
 
 @keyframes EffectStitch {
-
     0% {
-        filter: drop-shadow(0 0 2px rgb(255, 255, 255)) drop-shadow(0 0 5px rgb(255, 255, 255));
+        filter: drop-shadow(0 0 2px hsl(100, 100%, 70%)) drop-shadow(0 0 5px hsl(100, 100%, 70%));
+    }
+
+    20% {
+        filter: drop-shadow(0 0 2px hsl(40, 100%, 70%)) drop-shadow(0 0 5px hsl(40, 100%, 70%));
+    }
+
+    40% {
+        filter: drop-shadow(0 0 2px hsl(160, 100%, 70%)) drop-shadow(0 0 5px hsl(160, 100%, 70%));
+    }
+
+    60% {
+        filter: drop-shadow(0 0 2px hsl(220, 100%, 70%)) drop-shadow(0 0 5px hsl(220, 100%, 70%));
+    }
+
+    80% {
+        filter: drop-shadow(0 0 2px hsl(280, 100%, 70%)) drop-shadow(0 0 5px hsl(280, 100%, 70%));
     }
 
     100% {
-        filter: drop-shadow(0 0 4px rgb(255, 175, 1)) drop-shadow(0 0 10px rgb(255, 62, 0));
+        filter: drop-shadow(0 0 2px hsl(340, 100%, 70%)) drop-shadow(0 0 5px hsl(340, 100%, 70%));
     }
 }
 
@@ -177,29 +229,21 @@ section h1 {
 .iconBtn {
     width: 100%;
     height: 50px;
-    border-radius: 12px;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+    background: linear-gradient(90deg, #00bcd4, #c2185b);
+    background-size: 200% 200%;
+    background-position: left center;
+    transition: background-position 0.6s ease, transform 0.3s ease;
+    backdrop-filter: blur(10px);
     color: white;
+    border-radius: 18px;
+    border: 2px solid snow;
     font-weight: 600;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
 }
 
 .iconBtn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
-}
-
-/* Cores no hover */
-.hireme:hover,
-.instagram:hover,
-.whatsapp:hover {
-    background: linear-gradient(90deg, #00E5FF, #FF2FB3);
+    background-position: right center;
+    transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .box {
@@ -216,7 +260,7 @@ section h1 {
     width: 100%;
     max-width: 650px;
     border-radius: 20px;
-    animation: rainbowGlow 10s linear infinite;
+    animation: EffectStitch 6s linear infinite;
     transition: transform 0.4s ease;
     cursor: pointer;
 }
@@ -224,21 +268,6 @@ section h1 {
 .box .Perfil:hover {
     transform: scale(1.05) rotate(5deg);
 }
-
-@keyframes rainbowGlow {
-    0% {
-        filter: drop-shadow(0 0 4px #00bbff) drop-shadow(0 0 10px #FF1493);
-    }
-
-    50% {
-        filter: drop-shadow(0 0 8px #ffffff) drop-shadow(0 0 15px #ffffff);
-    }
-
-    100% {
-        filter: drop-shadow(0 0 4px #00bbff) drop-shadow(0 0 10px #FF1493);
-    }
-}
-
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
@@ -285,12 +314,6 @@ section h1 {
         max-width: 90%;
     }
 
-    .hireme,
-    .instagram,
-    .whatsapp {
-        background: linear-gradient(to top, #00E5FF, #FF2FB3);
-    }
-
     .My h1 {
         font-size: 36px;
     }
@@ -312,7 +335,6 @@ section h1 {
     .My .boxname img {
         margin-bottom: 10px;
         width: 80px;
-        filter: drop-shadow(0 0 1px rgb(255, 255, 255)) drop-shadow(0 0 2px rgb(255, 255, 255));
     }
 
     .contribution-graph {
@@ -366,7 +388,6 @@ section h1 {
         width: 100%;
         max-width: 450px;
         border-radius: 20px;
-        animation: rainbowGlow 5s linear infinite;
         transition: transform 0.4s ease;
     }
 }

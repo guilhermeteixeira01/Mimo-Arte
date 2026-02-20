@@ -39,9 +39,12 @@ export default function Home() {
                     <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Olá, bem vindo</h3>
                 </div>
                 <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="550">Mimo & Arte</h1>
-                <h4 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
-                    Personalizados feitos com carinho <span className="heart">💖</span>
-                </h4>
+                <div>
+                    <h4 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                        Personalizados feitos com carinho
+                    </h4>
+                    <span className="heart">💖</span>
+                </div>
 
                 <div className="boxbuttons">
                     <div className="midiasocial">
