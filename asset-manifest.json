@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Mimo-Arte/static/css/main.9378d001.css",
+    "main.css": "/Mimo-Arte/static/css/main.bd123648.css",
     "main.js": "/Mimo-Arte/static/js/main.2508a742.js",
     "static/js/453.9d50ddcb.chunk.js": "/Mimo-Arte/static/js/453.9d50ddcb.chunk.js",
     "static/media/Logo.jpg": "/Mimo-Arte/static/media/Logo.cf7fed938a415d59f469.jpg",
     "static/media/stitch.webp": "/Mimo-Arte/static/media/stitch.29296a3116c1c55d3e14.webp",
     "index.html": "/Mimo-Arte/index.html",
-    "main.9378d001.css.map": "/Mimo-Arte/static/css/main.9378d001.css.map",
+    "main.bd123648.css.map": "/Mimo-Arte/static/css/main.bd123648.css.map",
     "main.2508a742.js.map": "/Mimo-Arte/static/js/main.2508a742.js.map",
     "453.9d50ddcb.chunk.js.map": "/Mimo-Arte/static/js/453.9d50ddcb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9378d001.css",
+    "static/css/main.bd123648.css",
     "static/js/main.2508a742.js"
   ]
 }
