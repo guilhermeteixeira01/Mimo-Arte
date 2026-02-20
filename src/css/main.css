@@ -288,6 +288,12 @@ section h1 {
         font-size: 50px;
     }
 
+    .heart {
+        font-size: 18px;
+        top: 252px;
+        left: 225px;
+    }
+
     .My {
         flex: 1;
         width: 100%;
@@ -390,4 +396,5 @@ section h1 {
         border-radius: 20px;
         transition: transform 0.4s ease;
     }
+
 }
